@@ -1,0 +1,188 @@
+.parent-container {
+  padding: 0 20px;
+
+  .mt-40 {
+    margin-top: calc(10rem - 30px);
+  }
+
+  .secondary-text {
+    line-height: 34px;
+    font-weight: 500;
+    font-size: 28px;
+    word-break: normal;
+    color: black;
+  }
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+
+    .background-video {
+      height: 100vh;
+      width: 100vw;
+      object-fit: cover;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    .header-container {
+      display: flex;
+      flex-direction: column;
+      margin: auto 0;
+      .hero-image {
+        height: 225px;
+        width: 225px;
+      }
+
+      .header-font {
+        font-weight: 400;
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        max-width: 300px;
+        color: black;
+        margin-top: 28px;
+      }
+
+      .sub-header {
+        font-weight: 500;
+        font-family: sans-serif;
+        color: black;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        margin-top: 16px;
+      }
+    }
+
+    .apply-now {
+      width: 90vw;
+      background-color: rgba(253, 239, 120, 1);
+      padding: 16px;
+      position: fixed;
+      z-index: 10;
+      bottom: 0;
+      margin: 24px 0;
+    }
+  }
+
+  .animated-text-container {
+    width: 100%;
+    padding: 40px 0px;
+
+    .animated-text {
+      margin: 0;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s, transform 1s;
+    }
+
+    .animated-text.visible {
+      margin: 0;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .grey-text {
+      color: #9ea7ae;
+      font-weight: 400;
+    }
+  }
+
+  .circle {
+    border-radius: 50%;
+    background: linear-gradient(140.86deg, #65ecd8 11.07%, #fdef78 80.28%);
+    height: 96px;
+    width: 96px;
+    margin: 0 0 48px 0;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 1s, transform 1s;
+  }
+
+  .circle.visible {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .feature-container {
+    .warning {
+      line-height: 1.25rem;
+      font-weight: 400;
+      font-size: 13px;
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+// Using media queries like this and adding styles we can make it responsive
+// I'm not able to do it currently because of lack of time.
+@media only screen and (min-width: 64em) {
+  // .parent-container {
+  //   padding: 0 45px;
+  //   width: calc(100vw - 90px);
+
+  //   .mt-40 {
+  //     margin-top: calc(10rem - 30px);
+  //   }
+
+  //   .secondary-text {
+  //     line-height: 34px;
+  //     font-weight: 500;
+  //     font-size: 28px;
+  //     word-break: normal;
+  //     color: black;
+  //   }
+  //   .hero-container {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: flex-start;
+  //     height: 100vh;
+
+  //     .background-video {
+  //       height: 100vh;
+  //       width: 100vw;
+  //       object-fit: cover;
+  //       position: absolute;
+  //       left: 0;
+  //       right: 0;
+  //       top: 0;
+  //       bottom: 0;
+  //       z-index: -1;
+  //     }
+
+  //     .header-container {
+  //       display: flex;
+  //       flex-direction: row-reverse;
+  //       justify-content: center;
+  //       margin: auto;
+  //       width: 1280px;
+  //       .hero-image {
+  //         height: 420px;
+  //         width: 420px;
+  //         margin-left: 1.5rem;
+  //       }
+
+  //       .header-font {
+  //         font-weight: 400;
+  //         font-size: 3.4rem;
+  //         line-height: 54px;
+  //         max-width: 700px;
+  //         color: black;
+  //         margin-right: 1.5rem;
+  //       }
+
+  //       .sub-header {
+  //         font-weight: 500;
+  //         color: black;
+  //         font-size: 1rem;
+  //         line-height: 1.5rem;
+  //         margin-top: 16px;
+  //       }
+  //     }
+  //   }    
+  // }
+}

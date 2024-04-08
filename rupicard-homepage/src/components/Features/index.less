@@ -1,0 +1,87 @@
+.features-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: calc(100vw - 40px);
+  word-wrap: break-word;
+  background-color: black;
+  margin: 0 -20px;
+  padding: 2rem 20px;
+
+  .back-circles {
+    width: 70%;
+    height: auto;
+    top: 0;
+    position: absolute;
+  }
+
+  .major-feature {
+    display: flex;
+    flex-direction: column;
+
+    .primary-text {
+        color: white;
+        line-height: 1.2;
+        font-weight: 500;
+        font-size: 22px;
+      }
+    
+      .primary-text-color {
+        background: linear-gradient(140.86deg, #65ecd8 11.07%, #fdef78 80.28%);
+        -webkit-background-clip: text;
+        color: transparent;
+        line-height: 1.2;
+        font-weight: 500;
+        font-size: 22px;
+        margin-bottom: 1rem;
+        margin-top: 24px;
+      }
+    
+      .secondary-text {
+        font-size: 14px;
+        color: #bfc9cc;
+        line-height: 18px;
+      }
+    
+      .app-screen {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 24px;
+      }
+    
+  }
+
+  .minor-feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    .primary-text {
+        color: white;
+        line-height: 18px;
+        font-weight: 500;
+        font-size: 1rem;
+        margin: 0;
+      }
+    
+      .secondary-text {
+        font-size: .875rem;
+        line-height: 1.25rem;
+        color: #bfc9cc;
+        margin-top: 0.5rem;
+      }
+
+      .minor-feature-image {
+        width: 5rem;
+        height: auto;
+        margin: auto;
+      }
+    
+      .text-box {
+        width: 50%;
+      }
+    
+  }
+}
