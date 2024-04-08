@@ -1,4 +1,3 @@
-import React from "react";
 import "./index.less";
 
 type RenderProp = {
@@ -74,7 +73,7 @@ const Features = () => {
     secondaryText,
     colorText,
     src,
-    index,
+    index = 0,
   }: RenderProp) => {
     return (
       <>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { handleScroll } from "./utils.tsx";
 import ImageWithDesc from "./components/ImageWithDesc/index.tsx";
 import "./App.less";
